@@ -1,0 +1,35 @@
+
+
+GET http://localhost:3000/task HTTP/1.1
+
+###
+GET http://localhost:3000/task HTTP/1.1
+
+###
+POST http://localhost:3000/task HTTP/1.1
+Content-Type: application/json
+
+{
+    "morning": "eat",
+    "afternoon": "work and rest",
+    "evening": "work and eat",
+    "midnight": "work and rest"
+
+}
+
+###
+PUT http://localhost:3000/task/62bf12a04130a852be253128 HTTP/1.1
+Content-Type: application/json
+
+{
+    "morning": "gym",
+    "afternoon": "relax",
+    "evening":"watch netflix",
+    "midnight": "sleep"
+
+}
+
+###
+DELETE http://localhost:3000/task/62bf12a04130a852be253128 HTTP/1.1
+
+
